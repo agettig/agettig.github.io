@@ -11,16 +11,37 @@
 
 <body style="height:1500px">
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Ariela Gettig</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
     </div>
   </nav>
 
-  <div class="container-fluid" style="margin-top:80px">
-    <h3>Top Fixed Navbar</h3>
-    <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-    <h1>Scroll this page to see the effect</h1>
+  <div class="container-fluid mt-3">
+    <h3>Collapsible Navbar</h3>
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner
+      (try to re-size this window).</p>
+    <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+    <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.
+    </p>
   </div>
 
 </body>
