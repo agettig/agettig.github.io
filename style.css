@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  font-family: 'Monaco';
+  font-family: 'Calibri';
   background-color: #2e294eff;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #fbf9ffff;
-  color:#2e294eff
+  color:#2e294eff;
+  margin-bottom: 50px;
 }
 
 
@@ -66,8 +67,15 @@ body {
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 30%;
-  border-radius: 30%;
+  width:90%;
+  border-radius: 100%;
+  border: 3px solid #a6d8d4ff
+}
+
+h1{
+  color:#a6d8d4ff;
+}
+
+p{
+  font-size:14pt
 }
