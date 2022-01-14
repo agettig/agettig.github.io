@@ -10,49 +10,38 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-  <title>Hello, world!</title>
+  <link href="style.css" rel="stylesheet">
+  <title>Ariela Gettig</title>
 </head>
 
-<body style="height:1500px">
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Ariela Gettig</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="experience.html">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="resume.html">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Ariela Gettig</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars">button</i>
+    </a>
 
-  <div class="container-fluid mt-3">
-    <h3>Collapsible Navbar</h3>
-    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner
-      (try to re-size this window).</p>
-    <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-    <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.
-    </p>
   </div>
+
+  <div style="padding-left:16px">
+    <h2>Responsive Topnav Example</h2>
+    <p>Resize the browser window to see how it works.</p>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
 </body>
 
