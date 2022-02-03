@@ -10,12 +10,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body style="background-color: #1e1a32">
+<body style="background-color: #272343">
 
   <nav class="navbar navbar-expand-sm topnav">
     <a class=" navbar-brand" href="index.html" style="font-size: 16pt; font-weight:bold;">Ariela Gettig</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -59,6 +65,12 @@
 
     </div>
   </div>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
 
 
 </body>
