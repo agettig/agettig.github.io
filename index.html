@@ -5,59 +5,102 @@
   <title>Ariela Gettig</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
-  <title>Ariela Gettig</title>
+  <link href="public\styles\style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="topnav" id="myTopnav">
     <a href="index.html"><b>Ariela Gettig</b></a>
-    <a href="index.html">Home</a>
+    <a href="index.html"><b>Home</b></a>
     <a href="experience.html">Experience</a>
     <a href="projects.html">Projects</a>
     <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
 
-
-    <button class="icon" onclick="myFunction()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
+    <button class="icon" onclick="toggleNav()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
 
   </div>
 
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-4">
-      <img id="headshot" src="arielaportrait1.JPEG">
+  <main>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-4">
+        <div class="image-container">
+          <img id="headshot" src="public\images\arielaportrait.JPEG" alt="headshot">
+        </div>
+        <div class="description">
+          <p id="name">
+            Ariela Gettig
+          </p>
+          <p id="title">CS Undergraduate</p>
+        </div>
+
+      </div>
+
+      <div class="col-6">
+        <div class="aboutme">
+          <h1>About Me</h1>
+          <p> Hi, I'm Ariela Gettig and I'm a current junior at Cornell University. I am
+            majoring in computer science and minoring in information sciences. I am interested in
+            full stack development and web applications. I am currently looking for an in-person internship for software
+            development
+            in the Bay area. Please reach out with any questions or inquiries!
+          </p>
+          <div class="row">
+            <div class="col-7">
+              <h2 class="colored-title">Languages</h2>
+              <div>
+                <img src="public/images/python.png" alt="Python Logo" class="logo">
+                <img src="public/images/php.png" alt="Php" class="logo">
+              </div>
+              <div>
+                <img src="public/images/java-icon.png" alt="Java Logo" class="logo">
+                <img src="public/images/javascript.png" alt="JavaScript Logo" class="logo">
+              </div>
+            </div>
+            <div class="col-5">
+              <h2 class="colored-title">Tools</h2>
+              <ul style="padding: 0px">
+                <li class="skills-list">Git</li>
+                <li class="skills-list">Docker</li>
+                <li class="skills-list">Firebase</li>
+                <li class="skills-list">Jira</li>
+                <li class="skills-list">Jama</li>
+                <li class="skills-list">Latex</li>
+                <li class="skills-list">React</li>
+              </ul>
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-1"></div>
     </div>
-
-    <div class="col-6">
-      <h1>About Me</h1>
-      <p> Hi, I'm Ariela Gettig and I'm a current sophomore at Cornell University. I am
-        majoring in computer science and
-        minoring in biomedical engineering. I am interested in artificial intelligence and cybersecurity. In my free
-        time I like to work on independent projects and relax with a movie.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet, odio et iaculis viverra, tortor
-        est tincidunt erat, id scelerisque augue dolor vel lorem. Vivamus et lacus nec diam efficitur maximus ut
-        volutpat nisi. Donec lobortis finibus imperdiet. Suspendisse potenti. Nam sit amet quam lectus. Donec
-        convallis libero massa, ac euismod ex interdum varius. In hac habitasse platea dictumst. Nulla quis accumsan
-        justo. Curabitur sit amet egestas libero. Pellentesque bibendum tellus sapien, vitae luctus metus porttitor a.
-      </p>
+  </main>
+  <footer>
+    <div class="col-12 footer">
+      Ariela Gettig <span>&#8226;</span> <a href="mailto:aqg3@cornell.edu" class="footer-links">ariela.gettig@gmail.edu
+      </a><span>&#8226;</span> <a href="https://www.linkedin.com/in/ariela-gettig/" class="footer-links"
+        target="_blank">LinkedIn </a><span>&#8226;</span> <a href="https://github.com/agettig" class="footer-links"
+        target="_blank">GitHub</a>
     </div>
-    <div class="col-1"></div>
+  </footer>
 
-</body>
-
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+  <script>
+    function toggleNav() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
 

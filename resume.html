@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Resume</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
+  <link href="public/styles/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,24 +14,151 @@
     <a href="index.html">Home</a>
     <a href="experience.html">Experience</a>
     <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <a href="resume.html"><b>Resume</b></a>
 
 
-    <button class="icon" onclick="myFunction()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
+    <button class="icon" onclick="toggleNav()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
+
   </div>
+  <main>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1>Resume</h1>
+        <div class="contact-container">
+          <p><a href='public/documents/ariela_gettig_resume.pdf' id="download" download><strong>For a downloaded copy
+                please click here</strong></a></p>
+          <h2>Ariela Gettig</h2>
+          <hr>
+          <h3>EDUCATION</h3>
+          <p><strong>Cornell University</strong>, College of Engineering, Ithaca, NY <br>
+            Backelor of Science, Computer Science <br>
+            GPA: 3.63/4.00 Awards: Dean's List (FA20, FA21, SP22)</br></br>
+            <strong>Relevant Courses:</strong> Object-Oriented Programming, Computer System Organization,
+            Intermediate Design and Programming for Web, Discrete Structures, Functional Programming, Machine Learning,
+            Algorithms, Web Applications
+          </p>
+          <hr>
+          <h3>SPECIALIZED SKILLS</h3>
+          <p><strong>Programming Languages:</strong> C, CSS, HTML, Java, JavaScript, OCaml, PHP, Python, SQL</p>
+          <p><strong>Tools:</strong> Git, Docker, Firebase, Jira, Jama, Latex, React</p>
+          <hr>
+          <h3>RELEVANT EXPERIENCE</h3>
+          <p><strong>Software Test Engineering Intern</strong>, <em>STERIS</em>, Mentor, OH <br></p>
+          <p> May - August 2022</p>
+          <ul>
+            <li>
+              Developed Jama connector for in-house python automation framework using Jama test automation API.
+              Connector collected test cases to execute from Jama, executed the tests on the framework, and uploaded the
+              results to Jama.
+            </li>
+            <li>
+              Designed a cycle control board (CCB) simulator used to communicate with a human-machine interface for
+              medical sterilizers. The simulation covered multiple CCB components, including 160 analog and digital IOs,
+              a ferroelectric RAM chip for configuration storage, and application modules used to control physical
+              product behaviors.
+            </li>
+            <li>
+              Refactored a GUI for a hardware tester that checked the functionality of circuit boards used for STERIS
+              products.
+            </li>
+          </ul>
+          <p><strong>Software Engineering Intern</strong>, <em>Square Fare</em>, New York, NY <br></p>
+          <p>December 2021 - January 2022</p>
+          <ul>
+            <li>
+              Automated processing of restaurant data using Python and a REST API to increase Square Fare’s database
+              of restaurant items by 50%.
+            </li>
+            <li>
+              Analyzed trends of 100+ restaurant items to create better customer recommendations for subscribers.
+            </li>
+          </ul>
 
-  <div class="row">
-    <div class="col-1"></div>
-    <div class=col-10>
-      <h1 style="text-decoration: underline;">Resume</h1>
-      <iframe src="ariela-gettig_resume.pdf" width="100%" height="600px"></iframe>
+          <hr>
+          <h3>PROJECTS</h3>
+          <div>
+            <p>
+              <strong>Build - A - Cache</strong>
+            <p>
+            <p>April - May 2022</p>
+            <ul>
+              <li>
+                Built a cache simulator in C to assess cache performance on payloads using different cache coherency
+                protocols, cache line sizes, and number of cores.
+              </li>
+              <li>
+                Analyzed the performance by measuring the cache's miss rate when the cache's specifications are changed.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              <strong>Playful Plants Media Catalog</strong>
+            <p>
+            <p>February - May 2022</p>
+            <ul>
+              <li>
+                Created a server-side rendered web app using PHP and SQL that allows users to access a plant database.
+              </li>
+              <li>
+                Users can login to admin page to add and delete entries and consumers can view the database without a
+                login.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              <strong>The Game of Life</strong>
+            <p>
+            <p>August - December 2021</p>
+            <ul>
+              <li>
+                Developed the Game of Life board game in OCaml using the functional programming features of immutability
+                and higher-order programming.
+              </li>
+              <li>
+                Organized group meetings and delegated tasks to team members to complete goals for each milestone.
+              </li>
+              <li>
+                Built the game engine using complex logic to execute a players turn based on their position on the game
+                board.
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <h3>LEADERSHIP EXPERIENCE</h3>
+          <p><strong>CS 3110 Functional Programming Teaching Assistant</strong>, Cornell University <br></p>
+          <p>January 2022 - Present</p>
+          <ul>
+            <li>
+              Led weekly discussion sections and helped 20+ students with lab questions.
+            </li>
+            <li>
+              Held weekly office hours to help students with projects, assignments, and exam preparation.
+            </li>
+            <li>
+              Graded students’ coding assignments and provided feedback on how to improve their code quality.
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="col-2"></div>
     </div>
-    <div class="col-1"></div>
-  </div>
+  </main>
+  <footer>
+    <div class="col-12 footer">
+      Ariela Gettig <span>&#8226;</span> <a href="mailto:aqg3@cornell.edu" class="footer-links">ariela.gettig@gmail.edu
+      </a><span>&#8226;</span> <a href="https://www.linkedin.com/in/ariela-gettig/" class="footer-links"
+        target="_blank">LinkedIn </a><span>&#8226;</span> <a href="https://github.com/agettig" class="footer-links"
+        target="_blank">GitHub</a>
+    </div>
+  </footer>
 
   <script>
-    function myFunction() {
+    function toggleNav() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";

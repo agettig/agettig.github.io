@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Resume</title>
+  <title>Projects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
+  <link href="public/styles/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,18 +13,75 @@
     <a href="index.html"><b>Ariela Gettig</b></a>
     <a href="index.html">Home</a>
     <a href="experience.html">Experience</a>
-    <a href="projects.html">Projects</a>
+    <a href="projects.html"><b>Projects</b></a>
     <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
 
+    <button class="icon" onclick="toggleNav()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
 
-    <button class="icon" onclick="myFunction()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
   </div>
+  <main>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div>
+          <h1>Projects</h1>
+        </div>
+        <div class="experience-container">
+          <h2>Build - A - Cache</h2>
+          <h3>April - May 2022</h3>
+          <div class="project-description">Built-A-Cache was my final project for my computer architecture class. For
+            this project, I worked with 2 other classmates to make a cache simulator which allowed users to vary the
+            cache size, cache line size, number of cores, and cache coherency protocol. The cache simulator allows users
+            to simulate caches using VI protocol and MSI protocol. We then used the simulator to create graphs which
+            were used to analyze the best configuration for a cache. One thing I learned was that generally increasing
+            block size decreases cache misses up to a certain critical point.
+          </div>
+        </div>
+        <div class="experience-container">
+          <h2>Playful Plants Media Catalog</h2>
+          <h3>February - May 2022</h3>
+          <img src="public/images/PlayfulPlants.png" alt="Playful Plants" class="project-img">
+          <div class="project-description">
+            The Playful Plants Media Catalog is a consumer catalog built using PHP. This website was final
+            project for CS2300: Intermmediate Web Programming and I worked on it for 4 months. The catalog is backed by
+            a SQL database and administrator users are able to add, edit, and delete entries in the catalog. From this
+            project, I learned how dynamic websites are created and supported. I really enjoyed this project because I
+            got a lot of feedback on the design aspects and there was a lot of growth and progress to make the finishing
+            product.
+            </br><a href="https://aqg3-project3.herokuapp.com/" target="_blank">Please click here to view my project</a>
 
+          </div>
+        </div>
+        <div class="experience-container">
+          <h2>The Game of Life</h2>
+          <h3>August - December 2021</h3>
 
+          <img src="public/images/life.png" alt="Life Game" class="project-img">
+
+          <div class="project-description"> I developed The Game of Life in a functional programming class. The main
+            language used was OCaml. I worked with 3 other team members to recreate the game. We spent all semester
+            working on this project and we decided to make the game in terminal. The instructions to the game would
+            print to the screen and players could take turns deciding where to go. I developed the main function that
+            ran the game recursively. I also did a lot of organizational work. From this project, I learned a lot about
+            working on a long-term project with a team. In this project, we mostly focused on learning the methods used
+            to implement a game using functional programming.</div>
+        </div>
+
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="col-12 footer">
+      Ariela Gettig <span>&#8226;</span> <a href="mailto:aqg3@cornell.edu" class="footer-links">ariela.gettig@gmail.edu
+      </a><span>&#8226;</span> <a href="https://www.linkedin.com/in/ariela-gettig/" class="footer-links"
+        target="_blank">LinkedIn </a><span>&#8226;</span> <a href="https://github.com/agettig" class="footer-links"
+        target="_blank">GitHub</a>
+    </div>
+  </footer>
 
   <script>
-    function myFunction() {
+    function toggleNav() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";

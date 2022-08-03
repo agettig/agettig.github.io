@@ -1,28 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Resume</title>
+  <title>Experience</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
+  <link href="public/styles/style.css" rel="stylesheet">
 </head>
 
 <body>
+
   <div class="topnav" id="myTopnav">
     <a href="index.html"><b>Ariela Gettig</b></a>
     <a href="index.html">Home</a>
-    <a href="experience.html">Experience</a>
+    <a href="experience.html"><b>Experience</b></a>
     <a href="projects.html">Projects</a>
     <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
 
+    <button class="icon" onclick="toggleNav()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
 
-    <button class="icon" onclick="myFunction()"><img style="height: 30px;width: 30px;" src="menu-icon.png"></button>
   </div>
+  <main>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div>
+          <h1>Experience</h1>
+        </div>
+        <div class="experience-container">
+          <h2>Software Test Engineering Intern - STERIS</h2>
+          <h3>May - August 2022</h3>
+          <p>
+            This past summer, I worked as a Software Test Engineering Intern for STERIS's Infection Prevention and
+            Technology business unit. At STERIS, I worked on 3 main projects. My first project was a Jama connector that
+            reduced the time it takes to run verification tests for the test engineers. This project used an in-house
+            python automation framework to run tests that were collected using the Jama test automation API. The results
+            were then updated and attached to test runs in Jama. For my second project, I designed a cycle control board
+            (CCB) simulator that communicates with a human-machine interface formedical sterilizers. The simulator
+            controls multiple CCB components, including 160 analog and digital IOs, a ferroelectric RAM chip for
+            configuration storage, and application modules used to control physical product
+            behaviors. Lastly, I refactored a GUI for a hardware tester that checked the functionality of circuit boards
+            used for STERIS
+            products.
+          </p>
+        </div>
+        <div class="experience-container">
+          <h2>CS 3110 Teaching Assistant - Cornell University</h2>
+          <h3>January 2022 - Present</h3>
+          <p>
+            I am a teaching assistant for Cornell's functional programming and data structures class. As an
+            undergraduate teaching assistant, I hold office hours every week. During office hours, I help students with
+            programming assignments and going over content. I also run a discussion section each week where I help
+            20+ students complete lab questions. I am also responsible for grading exams and assignments. I decided to
+            become a TA because I like help others and I really enjoyed the class when I took it.
+          </p>
+        </div>
+        <div class="experience-container">
+          <h2>Society of Women Engineers Webmaster - Cornell University</h2>
+          <h3>January 2022 - Present</h3>
+          <p> As a Webmaster for the Society of Women Engineers, I am working on building their new website. We deplayed
+            the new website after a semester of work at the end of spring 2022. I worked on combining all the pages.
+            Specifically, I worked on the eboard, directorships, events, and awards pages. I
+            joined as Webmaster to polish my web developer skills and to learn more JavaScript.
+          </p>
+        </div>
+        <div class="experience-container">
+          <h2>Software Engineering Intern - Square Fare</h2>
+          <h3>December 2021 - January 2022</h3>
+          <p> I worked as a software engineering intern for 3 weeks at Square Fare. Square Fare is a start-up company
+            that
+            has a subscription-based program that gives its users dish recommendations based on their health profile and
+            goals. While I was there, I worked on expanding their database of restaurant dishes. I used REST APIs to
+            pull
+            restaurant data. I then worked a lot on analyzing the data and transforming it so it could be used in their
+            database.
+          </p>
+        </div>
+
+        <div class="experience-container">
+          <h2>Undergraduate Research Assistant - Cornell University</h2>
+          <h3>March 2021 - August 2021</h3>
+          <p> I worked as an undergraduate research assistant for Professor Warren Zipfel. In the lab, I worked on
+            cultured cells using biosafety-level 2 protocol. I also conducted quantitative image analysis using Python.
+          </p>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="col-12 footer">
+      Ariela Gettig <span>&#8226;</span> <a href="mailto:aqg3@cornell.edu" class="footer-links">ariela.gettig@gmail.edu
+      </a><span>&#8226;</span> <a href="https://www.linkedin.com/in/ariela-gettig/" class="footer-links"
+        target="_blank">LinkedIn </a><span>&#8226;</span> <a href="https://github.com/agettig" class="footer-links"
+        target="_blank">GitHub</a>
+    </div>
+  </footer>
+
 
   <script>
-    function myFunction() {
+    function toggleNav() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
